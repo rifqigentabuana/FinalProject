@@ -26,10 +26,10 @@
                     Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,10,00" />
         <Button x:Name="btnBayar" Content="Bayar" 
                     Background="#9732C7" Foreground="White"
-                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,110,00" />
+                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,110,00" Click="btnBayar_Click" />
         <Button x:Name="btnHapus" Content="Delete" 
                     Background="#9732C7" Foreground="White"
-                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,210,00" />
+                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,210,00" Click="btnHapus_Click" />
         <DataGrid x:Name="dgPesanan" ItemsSource="{Binding}"
                       Background="White"
                       Style="{DynamicResource DataGridStyle}"

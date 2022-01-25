@@ -18,34 +18,40 @@ namespace final_project_rev1.View
     /// </summary>
     public partial class PaketTersediaPage : Page
     {
+        Controller.TersediaController controller;
         public PaketTersediaPage()
         {
             InitializeComponent();
+            controller = new Controller.TersediaController(this);
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            lblHargaPaket.Content = "100.000";
+           
+            controller.paket1();
         }
 
         private void StackPanel_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
-            lblHargaPaket.Content = "300.000";
+            
+            controller.paket2();
         }
 
         private void StackPanel_MouseDown_2(object sender, MouseButtonEventArgs e)
         {
-            lblHargaPaket.Content = "400.000";
+            
+            controller.paket3();
         }
 
         private void StackPanel_MouseDown_3(object sender, MouseButtonEventArgs e)
         {
-            lblHargaPaket.Content = "500.000";
+            
+            controller.paket4();
         }
 
         private void btwBayar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Paket Telah Berhasil ditambahkan ke Pesnan Silahkan cek menu Pesanan/Silahkan Hubungi Customer Service kami untuk penanganan lebih lanjut");
+            controller.pesan();
         }
     }
 }

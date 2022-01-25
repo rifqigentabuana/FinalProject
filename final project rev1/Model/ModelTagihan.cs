@@ -12,7 +12,7 @@ namespace final_project_rev1.Model
 
         public string ID_Pengguna { get; set; }
         public string tanggal { get; set; }
-        public string abonement { get; set; }
+        public string abnoment { get; set; }
         public string lokal { get; set; }
         public string sljj { get; set; }
         public string percakapan_ponsel { get; set; }
@@ -28,7 +28,7 @@ namespace final_project_rev1.Model
         public DataSet tagihan(string ID_Pengguna)
         {
             DataSet ds = new DataSet();
-            ds = temp.SelectData("Select abonement,lokal,sljj,percakapan_ponsel,wifi,diskon,pajak,total from Tagihan where ID_Pengguna='" + ID_Pengguna + "'", "Tagihan");
+            ds = temp.SelectData("Select abnoment,lokal,sljj,percakapan_ponsel,wifi,diskon,pajak,total from Tagihan where ID_Pengguna='" + ID_Pengguna + "'", "Tagihan");
             return ds;
         }
         public DataSet tgl(string ID_Pengguna)
@@ -42,7 +42,7 @@ namespace final_project_rev1.Model
         {
             MessageBox.Show(ID_Pengguna);
             string tabel = "Tagihan";
-            string data = "abonement = '0', lokal = '0', sljj = '0', percakapan_ponsel = '0', wifi= '0', pajak= '0', total = '0'";
+            string data = "abnoment = '0', lokal = '0', sljj = '0', percakapan_ponsel = '0', wifi= '0', pajak= '0', total = '0'";
             string kondisi = "ID_Pengguna = '" + ID_Pengguna + "'";
             return temp.Update(tabel, data, kondisi);
         }

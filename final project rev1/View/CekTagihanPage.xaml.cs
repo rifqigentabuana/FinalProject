@@ -21,7 +21,7 @@ namespace final_project_rev1.View
         Controller.TagihanController tagihan;
 
         public static string id;
-        public static string abonement;
+        public static string abnoment;
         public static string tanggal;
         public static string lokal;
         public static string sljj;

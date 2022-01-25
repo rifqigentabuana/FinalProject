@@ -18,7 +18,7 @@ namespace final_project_rev1.Model
 
             conn = new SqlConnection();
             conn.ConnectionString = "Data Source = ENCODE;" +
-                                    "Initial Catalog = App_Wifi_New1;" +
+                                    "Initial Catalog = FINAL_PROJECT_APP_WIFI;" +
                                     "Integrated Security = true";
             return conn;
         }
@@ -139,6 +139,26 @@ namespace final_project_rev1.Model
             return result;
         }
 
+        public Boolean Delete(string tabel, string kondisi)
+        {
+            result = false;
+            try
+            {
+                string query = "DELETE FROM " + tabel + " WHERE " + kondisi;
+                conn.Open();
+                command = new SqlCommand();
+                command.Connection = conn;
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+                result = true;
+            }
+            catch (SqlException)
+            {
+                result = false;
+            }
+            conn.Close();
+            return result;
+        }
     }
 }
 
