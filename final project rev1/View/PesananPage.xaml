@@ -1,0 +1,39 @@
+﻿<Page x:Class="final_project_rev1.View.PesananPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:final_project_rev1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800" MinHeight="550" MinWidth="800"
+      Title="PesananPage" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Informasi Pesanan" Foreground="Black" FontSize="24" FontWeight="Medium" HorizontalAlignment="left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" Margin="00,00,00,50"/>
+        <Label Content="Pesanan akan tercatat disini, pesanan akan hilang apabila telah melakukan pembayaran/perubahan." Foreground="Black" FontSize="12" FontWeight="Medium" HorizontalAlignment="left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" Margin="00,20,00,00"/>
+        <Button x:Name="btnCancel" Content="Cancel" 
+                    Background="#9732C7" Foreground="White"
+                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,10,00" />
+        <Button x:Name="btnBayar" Content="Bayar" 
+                    Background="#9732C7" Foreground="White"
+                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,110,00" />
+        <Button x:Name="btnHapus" Content="Delete" 
+                    Background="#9732C7" Foreground="White"
+                    Height="27" Width="80" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Margin="00,00,210,00" />
+        <DataGrid x:Name="dgPesanan" ItemsSource="{Binding}"
+                      Background="White"
+                      Style="{DynamicResource DataGridStyle}"
+                  Grid.Row="1" Grid.Column="1"
+                  Margin="0,0,0,0"/>
+    </Grid>
+</Page>

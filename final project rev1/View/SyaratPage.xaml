@@ -1,0 +1,17 @@
+﻿<Page x:Class="final_project_rev1.View.SyaratPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:final_project_rev1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="SyaratPage" Background="White">
+
+    <Grid>
+        <StackPanel Background="White">
+            <Label Content="Syarat dan ketentuan" FontSize="29" Margin="20,30,0,00" Padding="0" FontFamily="Segoe UI" FontWeight="Medium" Foreground="Black" Height="43"/>
+            <TextBlock TextWrapping="Wrap" Margin="20,20,20,00" FontFamily="Segoe UI" FontSize="13" Padding="0" Text="Seluruh informasi yang terkandung dalam Aplikasi ini adalah benar pada saat dimasukkan Wifi dan mempunyai hak penuh untuk mengubah informasi yang ada dari waktu ke waktu ketidakmampuan atau kegagalan Anda dalam melakukan akses Aplikasi ini tidak dapat dijadikan alasan untuk menuntut, menggugat maupun mengklaim Wifi apabila ada kerugian yang menimpa Anda. Jika terdapat pengguna Aplikasi yang memberikan tanggapan atas informasi yang ada dalam Aplikasi ini, tetapi tidak terbatas pada pertanyaan, komentar, saran atau yang lain, maka hal itu dianggap sebagai sesuatu yang bukan rahasia dan Wifi tidak mempunyai kewajiban apapun sehubungan dengan tanggapan tersebut serta Wifi memiliki kebebasan untuk mereproduksi, menggunakan memberitahukan atau membagikan tanggapan tersebut tanpa pembatasan."/>
+        </StackPanel>
+    </Grid>
+</Page>

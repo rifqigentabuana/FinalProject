@@ -1,0 +1,93 @@
+﻿<Page x:Class="final_project_rev1.View.StatusPaketPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:final_project_rev1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="StatusPaketPage" Background="White">
+
+    <Grid>
+        <StackPanel Grid.Column="1" Background="White">
+            <Label Content="Status Paket Kamu" Margin="20,20,470,0" Padding="0" FontSize="24" FontWeight="Bold"/>
+            <Label Content="Kami memonitoring semua terkait dengan paket kamu seperti di bawah ini" Margin="20,0,320,0" Padding="0" FontSize="12" FontWeight="Medium"/>
+            <DockPanel Margin="20,00,20,20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" Background="#C960D2" Margin="20,15,20,00" CornerRadius="20" Height="200">
+                        <StackPanel>
+                            <Label Content="Download" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblDownload" Content="0" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Mbps" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="1" Background="#67B6A7" Margin="20,15,20,00" CornerRadius="20">
+                        <StackPanel>
+                            <Label Content="Upload" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblUpload" Content="0" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Mbps" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="2" Background="#3333A8" Margin="20,15,20,00" CornerRadius="20">
+                        <StackPanel>
+                            <Label Content="Penggunaan" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblpenggunaan" Content="2" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Gb" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="3" Background="#99A459" Margin="20,15,20,00" CornerRadius="20">
+                        <StackPanel>
+                            <Label Content="Pengguna" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblPengguna" Content="5" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Orang" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Margin="20,00,20,20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" Background="#B95959" Margin="20,15,20,00" CornerRadius="20" Height="200">
+                        <StackPanel>
+                            <Label Content="Senin" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblsenin" Content="100" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Gb" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="1" Background="#A0A0A0" Margin="20,15,20,00" CornerRadius="20">
+                        <StackPanel>
+                            <Label Content="Selasa" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblselasa" Content="10.00" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Gb" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="2" Background="#8C5F5F" Margin="20,15,20,00" CornerRadius="20">
+                        <StackPanel>
+                            <Label Content="Rabu" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblrabu" Content="2" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Gb" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="3" Background="#009BB0" Margin="20,15,20,00" CornerRadius="20">
+                        <StackPanel>
+                            <Label Content="Kamis" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20" Margin="00,20,00,00"/>
+                            <Label x:Name="lblkamis" Content="5" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" FontSize="30" Margin="00,10,00,10"/>
+                            <Label Content="Gb" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontWeight="Medium" FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Page>

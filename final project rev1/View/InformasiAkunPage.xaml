@@ -1,0 +1,87 @@
+﻿<Page x:Class="final_project_rev1.View.InformasiAkunPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:final_project_rev1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="InformasiAkunPage" Background="White">
+
+    <Grid>
+        <StackPanel Grid.Column="1" Background="White">
+            <Label Content="Hello," FontSize="24" Margin="20,20,0,0" Padding="0" FontFamily="Segoe UI" FontWeight="Bold" Foreground="Black"/>
+            <Label x:Name="lblUser" Content="Everybody" FontSize="24" Margin="20,00,00,10" Padding="0" FontFamily="Segoe UI" FontWeight="Bold" Foreground="Black"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0">
+                    <Label Content="ID Member" FontSize="13" Margin="20,10,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <DockPanel>
+                        <Label x:Name="lblMember"  Content=": No Member" FontSize="13" Margin="20,10,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                    </DockPanel>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <Label Content="Nama" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <DockPanel>
+                        <Label x:Name="lblUser1" Content=": Nama Member" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                    </DockPanel>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="0">
+                    <Label Content="Tanggal Lahir :" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="1">
+                    <Label x:Name="lblTTL" Content=": TTL Member" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="0">
+                    <Label Content="Alamat" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="1">
+                    <Label x:Name="lblAlamat" Content=": Alamat Member" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="0">
+                    <Label Content="Gender" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="1">
+                    <Label x:Name="lblGender" Content=": Status Member" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Grid.Column="0">
+                    <Label Content="Email" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Grid.Column="1">
+                    <Label x:Name="lblEmail" Content=": Email Member" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="6" Grid.Column="0">
+                    <Label Content="Nomer Telepon" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+                <StackPanel Grid.Row="6" Grid.Column="1">
+                    <Label x:Name="lblNomor" Content=": Nomer Telepon Member" FontSize="13" Margin="20,00,00,05" Padding="0"  FontWeight="Medium" Foreground="Black"/>
+                </StackPanel>
+            </Grid>
+            <Button x:Name="btnEdit" Content="Edit" FontWeight="Bold" Width="70" Height="20" HorizontalAlignment="Left" Margin="20,20,00,00" Click="btnEdit_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

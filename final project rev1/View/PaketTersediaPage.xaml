@@ -1,0 +1,121 @@
+﻿<Page x:Class="final_project_rev1.View.PaketTersediaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:final_project_rev1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800" MinHeight="550" MinWidth="800"
+      Title="PaketTersediaPage" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="230"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Content="Hello," Margin="25,20,470,0" Padding="0" FontSize="24" FontWeight="Bold"/>
+            <Label x:Name="lblUser" Content="Everybody" Margin="25,0,395,0" Padding="0" FontSize="22" FontWeight="Bold"/>
+            <Label Content="Silahkan Pilih Paket yang sesuai dengan kebutuhanmu...." Margin="25,0,200,0" Padding="0" FontSize="12" FontWeight="Medium"/>
+            <Label Content="Pilihan Paket Dari Kami" Margin="195,20,195,0" Padding="0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Grid Margin="10,10,10 ,00">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" MouseDown="StackPanel_MouseDown" Style="{DynamicResource StyleStackPanel}">
+                    <Border Height="220" Background="#C960D2" Margin="0,0,0,0" CornerRadius="20" Width="180">
+                        <StackPanel Background="Transparent">
+                            <Label Content="Up To" Foreground="Black" Margin="10,10,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="10" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+                            <Label Content="Mbps" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="Internet lebih stabil" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Kabel Fiber Optic" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Tanpa FUP (Kouta Unlimited)" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Ip Dynamic Private" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Customer Service 24 jam Nonstop" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Cocok Digunakan 16 - 17 Perangkat" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Gratis Penyimpanan Cloud 1 TB" Foreground="Black" Margin="10,5,10,10" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" MouseDown="StackPanel_MouseDown_1" Style="{DynamicResource StyleStackPanel}">
+                    <Border  Height="220" Background="#67B6A7" Margin="0,0,0,00" CornerRadius="20" Width="180">
+                        <StackPanel>
+                            <Label Content="Up To" Foreground="Black" Margin="10,10,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="20" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+                            <Label Content="Mbps" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="Internet lebih stabil" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Kabel Fiber Optic" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Tanpa FUP (Kouta Unlimited)" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Ip Dynamic Private" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="9"/>
+                            <Label Content="Customer Service 24 jam Nonstop" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Cocok Digunakan 16 - 17 Perangkat" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Gratis Penyimpanan Cloud 1 TB" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="2" MouseDown="StackPanel_MouseDown_2" Style="{DynamicResource StyleStackPanel}">
+                    <Border Height="220" Background="#FF5A5AC3" Margin="00,00,0,0" CornerRadius="20" Width="180">
+                        <StackPanel>
+                            <Label Content="Up To" Foreground="Black" Margin="10,10,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="30" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+                            <Label Content="Mbps" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="Internet lebih stabil" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Kabel Fiber Optic" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Tanpa FUP (Kouta Unlimited)" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Ip Dynamic Private" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Customer Service 24 jam Nonstop" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Cocok Digunakan 16 - 17 Perangkat" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Gratis Penyimpanan Cloud 1 TB" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="3" MouseDown="StackPanel_MouseDown_3" Style="{DynamicResource StyleStackPanel}">
+                    <Border Height="220" Background="#99A459" Margin="0,0,0,0" CornerRadius="20" Width="180" >
+                        <StackPanel>
+                            <Label Content="Up To" Foreground="Black" Margin="10,10,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="40" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" />
+                            <Label Content="Mbps" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+                            <Label Content="Internet lebih stabil" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Kabel Fiber Optic" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Tanpa FUP (Kouta Unlimited)" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Ip Dynamic Private" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Customer Service 24 jam Nonstop" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Cocok Digunakan 16 - 17 Perangkat" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                            <Label Content="Gratis Penyimpanan Cloud 1 TB" Foreground="Black" Margin="10,5,10,0" Padding="0" HorizontalAlignment="Center" FontSize="10"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Grid Margin="10,60,10,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Border  Margin="0,0,0,0" Width="520" Background="#FF3378AA" CornerRadius="15">
+                        <StackPanel Background="Transparent">
+                            <Label Content="Harga" Margin="40,5,0,0" Padding="0" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                            <Label x:Name="lblHargaPaket" Content="Rp 0" Margin="40,0,0,0" Padding="0" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel  Grid.Column="1">
+                    <Button x:Name="btwBayar"  Height="54" Width="160"
+                       Margin="00,0,00,0" Background="#105E97" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"
+                        Content="Bayar" Foreground="White" Click="btwBayar_Click"/>
+                </StackPanel>
+                
+            </Grid>
+        </StackPanel>
+        
+    </Grid>
+</Page>
